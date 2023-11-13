@@ -1,0 +1,134 @@
+body{
+    position: relative;
+    background-color: rgb(16, 16, 16);
+    height: 2000px; 
+}
+footer{
+    position: absolute;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+p, h1{
+    color: white;
+    font-family: Arial;
+}
+button{
+    background-color: rgb(16, 16, 16);
+    border: none;
+    width: 85px;
+    margin-right: 10px;
+    border-color: #000000;
+    height: 50px;
+    cursor: pointer;
+}
+.icon-button:hover{
+    background-color: gray;
+    border-radius: 30px;
+    border-style: solid;
+    
+}
+.home-button,
+.aboutme-button,
+.skills-button,
+.contact-button{
+    width: 100px;
+    background: none;
+    border: none;
+    color: rgb(128, 72, 226);
+    font-size: 15px;
+}
+
+.contact-button:hover{
+    color: rgb(160, 39, 39);
+    font-weight: bold;
+}
+.home-button:hover{
+    color: rgb(160, 39, 39);
+    font-weight: bold;
+}
+.aboutme-button:hover{
+    color: rgb(160, 39, 39);
+    font-weight: bold;
+}
+.skills-button:hover{
+    color: rgb(160, 39, 39);
+    font-weight: bold;
+}
+
+.Head-of-website{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    position: static;
+    margin-bottom: 40px;
+    padding: 30px;
+    align-content: center;
+}
+.Setting{
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+}
+
+
+
+.container-button{
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+#apple,
+#twitter,
+#github,
+#facebook {
+    font-size: 1em;
+    background-color: #18191f;
+    color: #fff;
+    box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080, 2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080;
+    border-radius: 29px;
+    padding: 11px 19px;
+    margin: 0 10px;
+    animation: animate 3s linear infinite;
+    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+}
+
+#twitter{
+    animation-delay: 0.3s;
+}
+#facebook{
+    animation-delay: 0.7s;
+}
+#github{
+    animation-delay: 0.1s;
+}
+@keyframes animate {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+.back-video{
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba (12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+    position: relative;
+    padding: 0 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
